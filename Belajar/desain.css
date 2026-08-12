@@ -1,0 +1,108 @@
+/*CSS
+Selector
+#selector
+.Selector
+
+hover di arahkan ke kursor
+*/
+
+
+a{
+	text-decoration:none; /* menghilangkan garis bawah*/
+	font-family: Sublima ExtraLight;
+	font-size: 1.5vw; /*ukuran text*/
+	color: darkred;
+
+}
+a:hover{
+	text-decoration:none; /* menghilangkan garis bawah*/
+	font-family: Sublima ExtraBold;
+	font-size: 2vw; /*ukuran text*/
+	color: darkorange;
+
+}
+body{
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 0%;
+	margin-bottom:0% ;
+}
+h3{
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: justify;
+	color: darkred ;
+	font-family: Sublima ExtraLight;
+}
+h1{
+	color: darkred;
+	font-size: 4.5vw;
+	font-family: Sublima ExtraBold;
+}
+
+/*Transisi damong atas bawah */
+
+#naik{transition: transform 1s}
+#naik:hover{transform: translateY(-5%);}
+
+#turun{transition: transform 1s}
+#turun:hover{transform: translateY(5%);}
+
+#kanan{transition: transform 1s}
+#kanan:hover{transform: translateX(5%);}
+
+#kiri{transition: transform 1s}
+#kiri:hover{transform: translateX(-5%);}
+
+/*Transisi rotasi muter */
+#rotasi1{transition: transform 3s}
+#rotasi1:hover{transform: rotateY(360deg);}
+
+#rotasi2{transition: transform 3s}
+#rotasi2:hover{transform: rotateX(360deg);}
+
+#rotasi3{transition: transform 1s}
+#rotasi3:hover{transform: rotate(-360deg);}
+
+#rotasi4{transition: transform 1s}
+#rotasi4:hover{transform: rotate(360deg);}
+
+/**/
+#perbesar1{transition: transform 1s}
+#perbesar1:hover{transform: scale(1.2);} /*Tambah sumbu X = samping Y = atas  */
+
+#perkecil1{transition: transform 0.7s}
+#perkecil1:hover{transform: scale(0.9);} /*Tambah sumbu X = samping Y = atas  */
+
+/*Opacity Perubahan warna*/
+
+.buram{-webkit-filter:opacity(100%)}
+.buram:hover{-webkit-filter:opacity(70%)}
+
+.sepia{-webkit-filter:opacity(100%)}
+.sepia:hover{-webkit-filter:sepia(70%)}
+
+.Hitamputih{-webkit-filter:grayscale(100%)}
+.Hitamputih:hover{-webkit-filter:grayscale(0%)}
+
+/*Animasi Dinamis*/
+
+#induk{
+	position: relative;
+	padding-bottom: 40%;
+}
+
+#pertama, #kedua, #ketiga{
+	position: absolute; top:0%; left: 0%;
+	opacity: 0%;
+	animation: bergerak 30s infinite;
+}
+
+@keyframes bergerak{
+	0%{opacity: 0; transform: translateX(100%)}
+	33%{opacity: 1; transform: translateX(0%)}
+	66%{opacity: 0; transform: translateX(-100%)}
+}
+#pertama{animation-delay: 0s}
+#kedua{animation-delay: 10s}
+#ketiga{animation-delay: 20s}
