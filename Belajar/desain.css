@@ -89,20 +89,20 @@ h1{
 
 #induk{
 	position: relative;
-	padding-bottom: 40%;
+	padding-bottom: 35%;
 }
 
 #pertama, #kedua, #ketiga{
 	position: absolute; top:0%; left: 0%;
 	opacity: 0%;
-	animation: bergerak 30s infinite;
+	animation: bergerak 6s infinite;
 }
 
 @keyframes bergerak{
-	0%{opacity: 0; transform: translateX(100%)}
+	0%{opacity: 1; transform: translateX(100%)}
 	33%{opacity: 1; transform: translateX(0%)}
 	66%{opacity: 0; transform: translateX(-100%)}
 }
 #pertama{animation-delay: 0s}
-#kedua{animation-delay: 10s}
-#ketiga{animation-delay: 20s}
+#kedua{animation-delay: 2s}
+#ketiga{animation-delay: 4s}

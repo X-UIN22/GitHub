@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="rumus.js"></script>
+</head>
+<body>
+	<center>
+		<h3>Kalkulator</h3>
+		<form name="formku">
+			<br><br><input name="x" placeholder="angka pertama">
+			<br><br><input name="y" placeholder="angka kedua">
+			<br><input type="button" value="x" onclick="kali()">
+			<input type="button" value=":" onclick="bagi()">
+			<input type="button" value="+" onclick="tambah()">
+			<input type="button" value="-" onclick="kurang()">
+			<input type="reset" value="c" >
+			<br><br><input name="hasil" placeholder="Hasil"reandonly/>
+		</form>
+
+			<hr>
+			<h3>Indeks Nilai</h3>
+			<form name="formku2"> 
+				<br><br><input name="tugas" placeholder="Nilai Tugas">
+				<br><br><input name="uts" placeholder="Nilai UTS">
+				<br><br><input name="uas" placeholder="Nilai UAS">
+				<br><br><input type="button" value="Hitung" onclick="indeks()" readonly/>
+				<br><br><input name="akhir"readonly/>
+				<br><br><input name="index_nilai" placeholder="Indeks Nilai" readonly/>
+			</form>
+
+			<hr>
+			<h3>BMI App</h3>
+			<form name="formku3">
+				<br/><input name="tinggi" placeholder="Tinggi Badan(CM)"/>
+				<br/><input name="berat" placeholder="Berat Badan(KG)">
+				<br><br><input type="button" value="cek" onclick="bmi_app()">
+				<input type="reset" value="C">
+				<br/><br/><input name="bmi" placeholder="Nilai BMI"readonly>
+			</form>
+
+			<hr>
+			<h3>Tiket pesawat online</h3>
+			<form name="formku4">
+				<br/>
+				<select name="tujuan">
+					<option> Pilih tujuan 
+					<option value="semarang">semarang
+					<option value="surabaya">surabaya
+					<option value="bali">bali
+					<option value="lombok">lombok
+					<option value="makasar">makasar
+				</select>
+				<br/><br/><input name="qty" placeholder="Qty">
+				<br/><br/><input type="button" value="Proses !" onclick="tiket()">
+				<input type="reset" value="c">
+				<br/><br/><input name="harga_satuan" value="Harga Satuan"readonly/>
+				<br/><br/><input name="total_harga" value="Total Harga"readonly>
+				<br/><br/><input name="ppn" value="PPN 11%" readonly/>
+				<br/><br/><input name="total_bayar" value="Total Bayar"readonly/>
+
+			</form>
+
+
+
+
+			<hr>
+			<h3>Zodiac App</h3>
+			<br/>
+			<form name="formku5">
+			<select name="tanggal"> 
+				<option> Pilih tanggal lahir
+				<option value="1">1
+				<option value="2">2
+				<option value="3">3
+				<option value="4">4
+				<option value="5">5
+				<option value="6">6
+				<option value="7">7
+				<option value="8">8
+				<option value="9">9
+				<option value="10">10
+				<option value="11">11
+				<option value="12">12
+				<option value="13">13
+				<option value="14">14
+				<option value="15">15
+				<option value="16">16
+				<option value="17">17
+				<option value="18">18
+				<option value="19">19
+				<option value="20">20
+				<option value="21">21
+				<option value="22">22
+				<option value="23">23
+				<option value="24">24
+				<option value="25">25
+				<option value="26">26
+				<option value="27">27
+				<option value="28">28
+				<option value="29">29
+				<option value="30">30
+				<option value="31">31
+			</select>
+			<br/><br/>
+			<select name="bulan">
+			<option> Pilih Bulan lahir
+				<option value="Jan">Jan
+				<option value="Feb">Feb
+				<option value="Mar">Mar
+				<option value="Apr">Apr
+				<option value="Mei">Mei
+				<option value="Jun">Jun
+				<option value="Jul">Jul
+				<option value="Agu">Agu
+				<option value="Sep">Sep
+				<option value="Okt">Okt
+				<option value="Nov">Nov
+				<option value="Des">Des
+			</select>
+			<br/><br/><input type="button" value="Cek" onclick="zodiac()">
+			<input type="reset" value="C">
+
+
+
+	</center>
+
+</body>
+</html>
