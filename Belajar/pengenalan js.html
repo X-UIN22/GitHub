@@ -2,47 +2,51 @@
 <html>
 <head>
 	<script src="rumus.js"></script>
+	<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
 <body>
 	<center>
+		<div style="width:50%">
 		<h3>Kalkulator</h3>
 		<form name="formku">
-			<br><br><input name="x" placeholder="angka pertama">
-			<br><br><input name="y" placeholder="angka kedua">
-			<br><input type="button" value="x" onclick="kali()">
-			<input type="button" value=":" onclick="bagi()">
-			<input type="button" value="+" onclick="tambah()">
-			<input type="button" value="-" onclick="kurang()">
-			<input type="reset" value="c" >
+			<br><br><input name="x" placeholder="angka pertama" class="form-control">
+			<br><br><input name="y" placeholder="angka kedua"class="form-control">
+			<br><input type="button" value="x" onclick="kali()" class="btn btn-primary">
+			<input type="button" value=":" onclick="bagi()" class="btn btn-info">
+			<input type="button" value="+" onclick="tambah()" class="btn btn-success">
+			<input type="button" value="-" onclick="kurang()" class="btn btn-warning">
+			<input type="reset" value="c"  class="btn btn-danger">
 			<br><br><input name="hasil" placeholder="Hasil"reandonly/>
 		</form>
 
 			<hr>
 			<h3>Indeks Nilai</h3>
 			<form name="formku2"> 
-				<br><br><input name="tugas" placeholder="Nilai Tugas">
-				<br><br><input name="uts" placeholder="Nilai UTS">
-				<br><br><input name="uas" placeholder="Nilai UAS">
-				<br><br><input type="button" value="Hitung" onclick="indeks()" readonly/>
-				<br><br><input name="akhir"readonly/>
-				<br><br><input name="index_nilai" placeholder="Indeks Nilai" readonly/>
+				<br><br><input name="tugas" placeholder="Nilai Tugas"class="form-control">
+				<br><br><input name="uts" placeholder="Nilai UTS"class="form-control">
+				<br><br><input name="uas" placeholder="Nilai UAS"class="form-control">
+				<br><br><input type="button" value="Hitung" onclick="indeks()" class="btn btn-primary" readonly/>
+				<br><br><input name="akhir" class="form-control"readonly/>
+				<br><br><input name="index_nilai" placeholder="Indeks Nilai" class="form-control" readonly/>
 			</form>
 
 			<hr>
 			<h3>BMI App</h3>
 			<form name="formku3">
-				<br/><input name="tinggi" placeholder="Tinggi Badan(CM)"/>
-				<br/><input name="berat" placeholder="Berat Badan(KG)">
-				<br><br><input type="button" value="cek" onclick="bmi_app()">
-				<input type="reset" value="C">
-				<br/><br/><input name="bmi" placeholder="Nilai BMI"readonly>
+				<br/><input name="tinggi" placeholder="Tinggi Badan(CM)" class="form-control"/>
+				<br/><input name="berat" placeholder="Berat Badan(KG)" class="form-control">
+				<br><br><input type="button" value="cek" class="btn btn-success" onclick="bmi_app()">
+				<input type="reset" value="C" class="btn btn-danger">
+				<br/><br/><input name="bmi" placeholder="Nilai BMI" class="form-control" readonly>
 			</form>
 
 			<hr>
 			<h3>Tiket pesawat online</h3>
 			<form name="formku4">
 				<br/>
-				<select name="tujuan">
+				<select name="tujuan" class="form-control">
 					<option> Pilih tujuan 
 					<option value="semarang">semarang
 					<option value="surabaya">surabaya
@@ -50,13 +54,13 @@
 					<option value="lombok">lombok
 					<option value="makasar">makasar
 				</select>
-				<br/><br/><input name="qty" placeholder="Qty">
-				<br/><br/><input type="button" value="Proses !" onclick="tiket()">
-				<input type="reset" value="c">
-				<br/><br/><input name="harga_satuan" value="Harga Satuan"readonly/>
-				<br/><br/><input name="total_harga" value="Total Harga"readonly>
-				<br/><br/><input name="ppn" value="PPN 11%" readonly/>
-				<br/><br/><input name="total_bayar" value="Total Bayar"readonly/>
+				<br/><br/><input name="qty" placeholder="Qty"class="form-control">
+				<br/><br/><input type="button" value="Proses !" class="btn btn-primary"onclick="tiket()">
+				<input type="reset" value="c" class="btn btn-danger">
+				<br/><br/><input name="harga_satuan" value="Harga Satuan " class="form-control"readonly/>
+				<br/><br/><input name="total_harga" value="Total Harga" class="form-control"readonly>
+				<br/><br/><input name="ppn" value="PPN 11%" class="form-control" readonly/>
+				<br/><br/><input name="total_bayar" value="Total Bayar" class="form-control"readonly/>
 
 			</form>
 
@@ -67,7 +71,7 @@
 			<h3>Zodiac App</h3>
 			<br/>
 			<form name="formku5">
-			<select name="tanggal"> 
+			<select name="tanggal" class="form-control"> 
 				<option> Pilih tanggal lahir
 				<option value="1">1
 				<option value="2">2
@@ -102,7 +106,7 @@
 				<option value="31">31
 			</select>
 			<br/><br/>
-			<select name="bulan">
+			<select name="bulan" class="form-control">
 			<option> Pilih Bulan lahir
 				<option value="Jan">Jan
 				<option value="Feb">Feb
@@ -117,8 +121,8 @@
 				<option value="Nov">Nov
 				<option value="Des">Des
 			</select>
-			<br/><br/><input type="button" value="Cek" onclick="zodiac()">
-			<input type="reset" value="C">
+			<br/><br/><input type="button" value="Cek" class="btn btn-primary" onclick="zodiac()">
+			<input type="reset" value="C"class="btn btn-warning">
 
 
 

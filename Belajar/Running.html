@@ -1,34 +1,61 @@
 <html>
 <head>
-	<link rel="stylesheet" href="desain.css">
+<link rel="stylesheet" href="desain.css">
+<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<script src="dom.js"></script>
 <title>Sport Event</title>
 </head>
 <body>
 <center>
+
 <div id="induk">
+
 	<div id="pertama"><img src="banner1.jpg" width="100%"></div>
 	<div id="kedua"><img src="banner2.jpg" width="100%"></div>
 	<div id="ketiga"><img src="banner3.jpg" width="100%"></div>
 </div>
+<nav class="topnav">
+<div class="topnav-inner">
 
-<a href="index.html">HOME</a>
+
+<a href="index.html"><span class="glyphicon glyphicon-home"> &nbsp;HOME</span></a>
 <a href="Running.html">RUNNER</a>
 <a href="Football.html">FOOTBALL</a>
-<a href="Basket.html">BASKETBALL</a>
-<a href="Basket.html">BADMINTON</a>
+<a href="Basket.html">BASKET</a>
+<a href="Badminton.html">BADMINTON</a>
+</div>
+</nav>
 
+<div style="width: 25%;">
+<form name="formraga">
+	<select name="template" class="form-control " onchange="rumus_dom()">
+		<option> Pilih Template
+		<option value="template1">Template 1
+		<option value="template2">Template 2
+		<option value="template3">Template 3
+		<option value="template4">Template 4
+		<option value="template5">Template 5
+	</select>
+</form>
+</div>
 <h1>RUNNER</h1>
 <br/><br/><img src="run.jpg" width="50%"id = perkecil1 class = sepia>
-<h3>Secara sederhana, runner adalah orang yang berlari. Namun dalam konteks yang lebih luas, runner bukan hanya seseorang yang bergerak cepat menggunakan kaki. Istilah ini merujuk pada seseorang yang:
+<p id="tulisan">
+	Secara sederhana, runner adalah orang yang berlari. Namun dalam konteks yang lebih luas, runner bukan hanya seseorang yang bergerak cepat menggunakan kaki. Istilah ini merujuk pada seseorang yang:
 
 Menjadikan lari sebagai aktivitas rutin, baik itu untuk kesehatan, kebugaran, atau pencapaian personal.
 Memiliki pemahaman tentang teknik dan ritme lari, seperti menjaga pace, mengenali jenis latihan, hingga mengikuti lomba.
 Memiliki komitmen jangka panjang terhadap olahraga lari, baik dalam bentuk latihan harian, bergabung dengan komunitas, atau mengikuti event resmi.
 
 Dengan demikian, runner adalah lebih dari sekadar “orang yang berlari”—tetapi juga seorang yang memiliki gaya hidup aktif dan terhubung dengan budaya lari.
-</h3>
 
+
+<footer class="footer">
+	<p> Badminton | Runner | Football | BasketBall</p>
 </p>&copy; Copyright : Sport Event | 2026</p>
+</footer>
 </center>
 </body>
 </html>

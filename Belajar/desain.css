@@ -1,26 +1,57 @@
-/*CSS
-Selector
-#selector
-.Selector
+#tulisan{
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: justify;
+}
 
-hover di arahkan ke kursor
-*/
+.footer{
+	margin:50px 0 0 0;
+	background: linear-gradient(90deg,orange,darkred);
+	color: white;
+	padding: 20px 10%;
+}
 
+*{box-sizing: border-box;}
+body{
+	margin:0;
+	padding: 0;
+	font-family: Sublima ExtraBold;
+	background: #ededc7;
+	display:flex ;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.topnav{
+	position: sticky;
+	top:0;
+	z-index: 1000;
+	background: linear-gradient(135deg,orange,darkred) ;
+	box-shadow: 0 3px 10px darkred;
+}
 
-a{
-	text-decoration:none; /* menghilangkan garis bawah*/
-	font-family: Sublima ExtraLight;
-	font-size: 1.5vw; /*ukuran text*/
+.topnav-inner{
+	display: flex;
+	gap: 8px;
+	padding: 8px 12px;
+	overflow: auto;
+	white-space: nowrap;
+}
+	.topnav-inner::-webkit-scrollbar{display: none;}
+.topnav a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 8px 10px;
+	border-radius: 6px;
+
+}
+.topnav a:hover{background-color: gray;
 	color: darkred;
 
-}
-a:hover{
-	text-decoration:none; /* menghilangkan garis bawah*/
-	font-family: Sublima ExtraBold;
-	font-size: 2vw; /*ukuran text*/
-	color: darkorange;
 
 }
+
+
 body{
 	margin-left: 0%;
 	margin-right: 0%;

@@ -1,29 +1,55 @@
 <html>
 <head>
-<link rel="stylesheet" href="desain.css">	
+<link rel="stylesheet" href="desain.css">
+<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<script src="dom.js"></script>
 <title>Sport Event</title>
 </head>
 <body>
 <center>
+
 <div id="induk">
+
 	<div id="pertama"><img src="banner1.jpg" width="100%"></div>
 	<div id="kedua"><img src="banner2.jpg" width="100%"></div>
 	<div id="ketiga"><img src="banner3.jpg" width="100%"></div>
 </div>
+<nav class="topnav">
+<div class="topnav-inner">
 
-<a href="Home.html">HOME</a>
+
+<a href="index.html"><span class="glyphicon glyphicon-home"> &nbsp;HOME</span></a>
 <a href="Running.html">RUNNER</a>
 <a href="Football.html">FOOTBALL</a>
 <a href="Basket.html">BASKET</a>
 <a href="Badminton.html">BADMINTON</a>
+</div>
+</nav>
 
+<div style="width: 25%;">
+<form name="formraga">
+	<select name="template" class="form-control " onchange="rumus_dom()">
+		<option> Pilih Template
+		<option value="template1">Template 1
+		<option value="template2">Template 2
+		<option value="template3">Template 3
+		<option value="template4">Template 4
+		<option value="template5">Template 5
+	</select>
+</form>
+</div>
 <h1>BADMINTON</h1>
 <br/><br/>
 <img src="bulutangkis.jpg" width="50%"id = perkecil1 class = sepia >
-<h3>Bulu tangkis atau tepuk bulu (bahasa Inggris: badminton; bentuk tidak baku: bulutangkis)[1] adalah suatu olahraga raket yang menggunakan raket untuk memukul kok melewati jaring. Meskipun dapat dimainkan dengan tim yang lebih besar, bentuk permainan yang paling umum adalah "tunggal" (dengan satu pemain di setiap sisi) dan "ganda" (dengan dua pemain di setiap sisi) yang saling berlawanan.
+<p id="tulisan">Bulu tangkis atau tepuk bulu (bahasa Inggris: badminton; bentuk tidak baku: bulutangkis)[1] adalah suatu olahraga raket yang menggunakan raket untuk memukul kok melewati jaring. Meskipun dapat dimainkan dengan tim yang lebih besar, bentuk permainan yang paling umum adalah "tunggal" (dengan satu pemain di setiap sisi) dan "ganda" (dengan dua pemain di setiap sisi) yang saling berlawanan.
 
 Mirip dengan tenis, bulu tangkis bertujuan memukul bola permainan bulu tangkis, yaitu kok melewati jaring agar jatuh di bidang permainan lawan yang sudah ditentukan dan berusaha mencegah lawan melakukan hal yang sama.
+<footer class="footer">
+	<p> Badminton | Runner | Football | BasketBall</p>
 </p>&copy; Copyright : Sport Event | 2026</p>
+</footer>
 </center>
 </body>
 </html>
